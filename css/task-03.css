@@ -33,13 +33,6 @@
   outline-offset: 0;
 }
 
-.gallery > li:hover  {
-  transform: scale(1.02);
-  outline-width: 1px;
-  outline-offset: 0;
-}
-
-
 .gallery > li:last-child {
   margin-right: 0;
 }
