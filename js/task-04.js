@@ -5,11 +5,9 @@ const actions = {
 }
 
 document.getElementById("counter")
-  .addEventListener("click", ({target:{dataset:{action}}}) => {
-    action && actions[action](
-      () => document.getElementById("value").textContent = counterValue
-    );
-  });
+  .addEventListener("click", e => actions[e.target.dataset.action]?.(
+    e => document.getElementById("value").textContent = counterValue
+  ));
 
 // =================== ОЖИДАЕМЫЙ ВАРИАНТ ===================
 
