@@ -1,0 +1,31 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 50px;
+}
+
+.gallery > li {
+  margin-right: 3%;
+
+  flex-basis: calc(80% / 3);
+
+  outline: calc(1vw + 1px) solid rgba(0,0,0,0.5);
+  outline-offset: -1vw;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 30px 5px rgba(255,255,255,0.1); 
+  box-shadow: 0px 0px 30px 0px rgba(255,255,255,0.1);
+}
+
+.gallery > li:last-child {
+  margin-right: 0;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+  border-radius: 7px;
+}
